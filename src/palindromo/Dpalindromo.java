@@ -5,7 +5,31 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.Locale;
 
-public class Palindromo{
+public class Dpalindromo{
+	
+	
+	//funcion que recorta la primer letra//
+	
+	public static boolean esIpalindromo(String palabra_1){
+		
+		String i_palabra;
+		
+		i_palabra = palabra_1.substring(1,palabra_1.length());
+		
+		return esPalindromo(i_palabra);
+	}
+	
+	
+	
+	public static boolean esDpalindromo(String palabra_2){
+		
+		String d_palabra;
+		
+		d_palabra = palabra_2.substring(0,palabra_2.length()-1);
+		
+		return esPalindromo(d_palabra);
+	}
+	
 	
 	
 	//funcion que dice si es palindromo o no//
@@ -49,7 +73,7 @@ public class Palindromo{
  
  String palabra="carlos";
  
- System.out.println(esPalindromo(palabra));
+ System.out.println(esDpalindromo(palabra));
 
  }
 
